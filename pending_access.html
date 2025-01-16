@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Pending</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a global styles.css -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4f358e;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #4f358e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #4f358e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #382674;
+        }
+
+        .container img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .contact-btn {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="SiteIcons/expired.png" alt="Pending Icon"> <!-- Add an appropriate pending icon image -->
+        <h2>Access Pending</h2>
+        <p>Your account is currently under review by our admin team. You will receive an email notification once your account has been approved.</p>
+        <p>If you have any questions, feel free to <a href="contact_form.php">contact support</a>.</p>
+        <button class="contact-btn" onclick="window.location.href='contact_form.php'">Contact Support</button>
+    </div>
+</body>
+</html>

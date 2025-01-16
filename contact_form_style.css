@@ -1,0 +1,372 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+main {
+    padding: 2em 1em;
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background-color: #555;
+    transition: border-color 0.3s;
+}
+
+.back-btn {
+    background-color: #aaa;
+}
+
+.back-btn:hover {
+    background-color: #888;
+}
+
+#contact-info {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#contact-info p {
+    font-size: 1.2em;
+}
+
+.social-media a {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Specific Styles for Back Button */
+.back-btn {
+    background-color: #444;
+    color: white;
+    padding: 0.7em 1.5em;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #555;
+    border: 2px solid #fff;
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+
+
+.pbutton {
+    width: 45px;
+    height: 45px;
+    background-color: #78ae45;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+   0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+   0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+  }
+  
+  .pbutton::before {
+    background-color: transparent;
+    content: "☎";
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .pbutton::after {
+    content: " Phone";
+    background-color: transparent;
+    font-size: 0;
+    opacity: 0;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    transform: translateX(60px);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .pbutton:hover {
+    width: 160px;
+    border-radius: 30px;
+  }
+  
+  .pbutton:hover::after {
+    opacity: 1;
+    font-size: 1.6em;
+    transform: translateX(0px);
+  }
+  
+  .pbutton:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+  
+.fbutton {
+    width: 45px;
+    height: 45px;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+   0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+   0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+  }
+  
+  .fbutton::before {
+    background-color: transparent;
+    content: "f";
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .fbutton::after {
+    content: "acebook";
+    background-color: transparent;
+    font-size: 0;
+    opacity: 0;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    transform: translateX(60px);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .fbutton:hover {
+    width: 160px;
+    border-radius: 30px;
+  }
+  
+  .fbutton:hover::after {
+    opacity: 1;
+    font-size: 1.6em;
+    transform: translateX(0px);
+  }
+  
+  .fbutton:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+
+
+
+  .ebutton {
+    width: 45px;
+    height: 45px;
+    background-color: #5d560c;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+   0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+   0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+  }
+  
+  .ebutton::before {
+    background-color: transparent;
+    content: "✉"; /* Unicode character for an envelope symbol */
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all 0.3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  
+  .ebutton::after {
+    content: "Email";
+    background-color: transparent;
+    font-size: 0;
+    opacity: 0;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    transform: translateX(60px);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .ebutton:hover {
+    width: 160px;
+    border-radius: 30px;
+  }
+  
+  .ebutton:hover::after {
+    opacity: 1;
+    font-size: 1.6em;
+    transform: translateX(0px);
+  }
+  
+  .ebutton:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+
+
+
+  .ibutton {
+    width: 45px;
+    height: 45px;
+    background-color: #9a296d;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+   0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+   0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+  }
+  
+  .ibutton::before {
+    background-color: transparent;
+    content: "📷"; 
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all 0.3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  
+  .ibutton::after {
+    content: "Instagram";
+    background-color: transparent;
+    font-size: 0;
+    opacity: 0;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    transform: translateX(60px);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .ibutton:hover {
+    width: 160px;
+    border-radius: 30px;
+  }
+  
+  .ibutton:hover::after {
+    opacity: 1;
+    font-size: 1.6em;
+    transform: translateX(0px);
+  }
+  
+  .ibutton:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+  .center-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    padding: 15px; 
+}
+
+a {
+    text-decoration: none; 
+}

@@ -1,0 +1,95 @@
+/* Floating Contact Button Styles */
+.floating-contact {
+    position: fixed;
+    bottom: 45px;
+    left:  50px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.contact-btn {
+    background-color: #ffffff; 
+    color: rgb(131, 115, 115); 
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 2px 4px #444;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    text-decoration: none; 
+}
+
+.contact-btn:hover {
+    background-color: #4db82d; 
+    transform: scale(1.05);
+}
+
+.contact-btn img {
+    
+    width: 4.5rem;
+    height: auto;
+}
+
+@media (max-width: 435px) {
+
+
+    .floating-contact {
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .contact-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .contact-btn img {
+        width: 2.8rem;
+        height: auto;
+    }
+}
+
+
+
+/* Floating Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 165px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.scroll-btn {
+    background-color: #ffffff; 
+    color: #444; 
+    margin-right: 2px;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 1px 3px #333;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    text-decoration: none; 
+}
+
+.scroll-btn:hover {
+    background-color: #4db82d; 
+    transform: scale(1.05);
+}
+
+.scroll-btn i {
+    vertical-align: middle;
+}
+

@@ -1,0 +1,1027 @@
+
+    .welcome-msg{
+        font-weight: 4rem;
+        size: 30px;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        padding-top: 100px;
+        background-color: #333;
+        background-image: url('bg3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .header{
+        background-image: url('bg3.jpg');
+        background-size: cover; /* Make the image cover the entire viewport */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    }
+
+    /* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    color: #4f358e;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    color: #4f358e;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+} */
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.active {
+    display: flex;
+}
+    /* logo Styles */
+    .floating-contact {
+        position: fixed;
+        top: 0;
+        left:  19rem;
+        text-align: center;
+        z-index: 1000;
+    }
+    .logo{
+        text-shadow: 0 0 25px #4CAF50 solid; 
+    }
+
+    .contact-btn img {
+        
+        width: 7.5rem;
+        height: auto;
+    }
+    .content-wrapper {
+        display: none;
+    }
+
+   
+        /* Floating Contact Button Styles */
+
+    .profile-btn {
+        position: fixed;
+        top: 25px;
+        right:  60px;
+        background-color: none; 
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s, transform 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 4rem;
+        text-decoration: none; 
+    }
+
+    .profile-btn:hover {
+        transform: scale(1.05);
+    }
+
+    .profile-btn img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .verify{
+        position: absolute;
+        margin-top: -1.9rem;
+        margin-left: 70.3rem;
+        z-index: 1002;
+
+    }
+    .verify:hover {
+        transform: scale(1.05);
+    }
+    .verify img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .noti {
+        position: fixed;
+        top: 32px;
+        right: 29rem;
+        z-index: 1000;
+    }
+
+    .noti img {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .notification-png {
+        margin-top: 10px;
+        width: 28px !important; 
+        height: auto !important; 
+    }
+
+    .notification-gif {
+        width: 45px !important; 
+        height: auto !important; 
+    }
+
+    .noti img:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    /* Overlay for Profile Form */
+    .overlay {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .overlay.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .form-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .form-container.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 2rem;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .close-btn:hover {
+        color: #ff009a;
+    }
+    .p{
+        display: none;
+    }
+
+    /**/
+    /* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Header styling */
+.container h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for desktop */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+/* Food item styling */
+.food-item {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    
+    
+}
+
+.food-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling with fixed aspect ratio */
+.food-item img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Title and description */
+.food-item h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.food-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+
+/* Form and message styling */
+.food-item form {
+    margin-top: 10px;
+}
+
+.food-item p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.food-item p a:hover {
+    text-decoration: underline;
+}
+/* CSS for poster's profile picture next to the poster's name */
+.poster-info {
+    display: flex;
+    align-items: right;
+    gap: 8px; /* Space between image and name */
+    font-size: 1rem;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: -5px;
+    margin-left: 10rem;
+}
+
+.poster-info img {
+    width: 30px;         
+    height: 30px;        
+    border-radius: 50%;  
+    object-fit: cover;   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.mini{
+    text-align: left;
+}
+/* Flex container for horizontal alignment */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+/* Styling for both button types */
+.btn, .request-btn {
+    background-color: #4f358e;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Individual styling for each button */
+.btn {
+    padding: 8px 18px;
+}
+
+.request-btn {
+    padding: 10px 20px;
+}
+
+.btn:hover, .request-btn:hover {
+    background-color: #4f358e;
+     transform: scale(1.009);     
+}
+span{
+    gap: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    background-color: transparent;
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid #272424;
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    background: #1e4320;
+    border: 2px solid #272424;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #388e3c;
+}
+
+.category-filters {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    margin-left: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+    background-color: transparent; /* No background */
+    color: blue;
+    border: none;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.filter-btn.active {
+    text-decoration: underline 3px solid;
+    text-decoration-color: #06C167 ;
+    text-underline-offset: 6px; 
+}
+
+
+.floating-div {
+    display: none;
+}
+.nav a{
+    color: whitesmoke;
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid {
+        display: block;
+    }
+
+    .food-item {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+    /* Responsive Design for Tablets (768px and below) */
+    @media (max-width: 768px) {
+        /* Adjust header layout */
+        .header {
+            background-color: whitesmoke;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            margin-right: 3rem;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav a {
+            font-size: 1rem;
+            
+        }
+
+        /* Profile and Contact Buttons */
+        .profile-btn {
+            top: 15px;
+            right: 30px;
+        }
+
+        .profile-btn img {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        .floating-contact {
+            top: 20px;
+            left: 10px;
+        }
+
+        .contact-btn img {
+            width: 5rem;
+            height: auto;
+        }
+
+        /* Footer adjustments */
+        .footer-top {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-menu {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .menu-list {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin: 15px 0;
+        }
+
+        .footer-brand, .footer-bottom {
+            text-align: center;
+        }
+    }
+
+    /* Responsive Design for Mobile Devices (435px and below) */
+    @media (max-width: 455px) {
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 100px;
+            background-color: #333;
+            background-image: url('bg3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header{
+            background-color: #79252c;
+            background-image: none;
+        }
+        /* Adjust layout for small screens */
+        .logo {
+            margin: 5px;
+            font-size: 1.5rem;
+            margin-left: -15rem;
+        }
+        /* .fx{
+            background-color: #fff;
+            background: white;
+            margin-left: 6.5%;
+        } */
+        .profile-btn {
+            margin-top: 8px;
+            margin-right: 20px;
+        }
+        .contact-btn{
+            display: none;
+        }
+        /* .container h2{
+            margin-left: 10px;
+            margin-top: 0;
+            display: block;
+            position: fixed;
+        }
+        .search-form{
+            margin-top: 2.5rem;
+            display: block;
+            position: fixed;
+
+        }
+        .grid{
+            margin-top: 6.5rem
+        } */
+        .p{
+            display: flex;
+            
+        }
+        .p img{
+            width: 60px;
+            margin-left: 5.5rem;
+            margin-top: -7px;
+        }
+        
+        /* Hide the navigation bar on small screens */
+        .nav {
+            display: none;
+        }
+
+        /* Hero Section Adjustments */
+        .hero-title {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        /* Profile and Contact Buttons */
+        .profile-btn {
+            top: 10px;
+            right: 10px;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .profile-btn img {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        
+
+        .start .section-title {
+            margin-top: -80px;
+            font-size: 1.5rem; 
+        }
+
+        .start p {
+            font-size: 0.8rem; /* Smaller font size for the paragraph */
+        }
+        /* Footer adjustments */
+        .footer-container {
+            max-width: 100%;
+        }
+
+        .footer-top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-menu {
+            display: none; /* Hide the footer menu for small screens */
+        }
+
+        .footer ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .footer ul li a {
+            color: #aaa;
+            font-size: 14px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer ul li a:hover {
+            color: var(--main-color); /* Hover effect for mobile links */
+        }
+
+        .social-icons a {
+            font-size: 1.2rem;
+            margin: 0 8px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+        }
+
+        
+    }
+    @media (max-width: 455px) {
+    /* Mobile view styling */
+    .food-item {
+        display: flex;
+        align-items: flex-start; /* Aligns items at the top */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .food-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .food-item-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10rem;
+        margin-top: -7rem;
+    }
+
+    .food-item h3 {
+        font-size: 1rem;
+        color: #333;
+        margin: 0;
+    }
+
+    .food-item p {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 5px 0;
+    }
+
+    .button-container {
+        display: grid;
+        gap: 5px;
+        margin-top: 5px;
+        margin-left: 10rem;
+    }
+
+    .start{
+        display: none;
+    }
+    .container h2{
+        font-size: 25px;
+    }
+
+    .btn,
+    .request-btn {
+        display: flex;
+        background-color: #4f358e;
+        color: #fff;
+        font-weight: 500;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .btn:hover,
+    .request-btn:hover {
+        background-color: #388e3c;
+    }
+
+    .poster-info {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: -40px;
+        margin-left: .5rem;
+    }
+
+    .poster-info img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    .mini {
+        font-size: 0.8rem;
+        color: #555;
+    }
+    .noti-button {
+        position: fixed;
+        bottom: 18px; /* Distance from the bottom of the screen */
+        left: 50px; /* Distance from the right side of the screen */
+        width: 45px;
+        height: 45px;
+        background-color: none;
+        border-radius: 50%;
+        border: #22c5b7 1.8px solid;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+        z-index: 1002;
+    }
+    .noti {
+        position: fixed;
+        z-index: 1001;
+    }
+
+    .noti img {
+        cursor: pointer;
+        width: 49px;
+        transition: transform 0.3s ease;
+    }
+
+    .notification-png {
+        margin-top: -1px;
+        width: 24px !important; 
+        height: auto !important; 
+    }
+
+    .notification-gif {
+        margin-top: -1px;
+        border-radius: 50%;
+        border: #22c5b7 1.8px solid;
+        width: 48px !important; 
+        height: auto !important; 
+    }
+    .message-image {
+    width: 50px;
+    height: auto;
+}
+  /* Floating div container */
+  .floating-div {
+    display: block;
+    position: fixed;
+    bottom: -2px;
+    left: 0;
+    height: 3.6rem;
+    width: 100%;
+    background-color: #2d0f35; /* You can change the color */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 -3px 12px #39a920;
+    z-index: 1001;
+  }
+
+  .content-wrapper {
+    display: block;
+}
+
+  .main-image {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    transition: opacity 0.3s ease;
+    z-index: 1001;
+  }
+
+  /* GIF overlay */
+  .loading {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('loading.gif') center center no-repeat;
+    display: none;
+    z-index: 1001;
+  }
+  
+  /* Container for the hidden images */
+  .hidden-images {
+    position: fixed;
+    bottom: 8rem; /* Position above the main image */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .blur-content {
+    backdrop-filter: blur(1.5px); /* Apply blur specifically to this container */
+}
+  
+  .blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1.5px);
+    display: none;
+    z-index: 1000; /* Lower this value to keep it under the secondary images */
+}
+
+.secondary-wrapper {
+    z-index: 1001; /* Higher than the blur overlay */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform-origin: bottom center;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+  
+  /* Circle buttons for each secondary image */
+  .secondary-image {
+    margin-bottom: -1rem;
+    width: 55px;
+    height: 55px;
+    border: 1.8px #000000 solid;
+    background-color: #fff;
+    border-radius: 50%; /* Make each image circular */
+    z-index: 1003;
+
+  }
+
+  /* Pop-up effect when image becomes visible */
+  .secondary-wrapper.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Label style under each image */
+  .label {
+    background-color: #fff;
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    width: 4rem;
+    border: 1.8px #000000 solid;
+    z-index: 1004;
+
+
+    color: #000000;
+  }
+  
+  .crt {
+    display: contents;
+}
+
+.crt .circle-button {
+    position: fixed;
+    bottom: 18px; /* Distance from the bottom of the screen */
+    right: 50px; /* Distance from the right side of the screen */
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: #22c5b7 1.8px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    z-index: 1002;
+}
+
+.crt .circle-button:hover {
+    transform: scale(1.1);
+}
+
+.message-image {
+    width: 20px; 
+    height: auto;
+}
+
+/* Styles for talk.gif */
+.talk-gif {
+    border-radius: 50%;
+    border: 2px blueviolet solid;
+    width: 40px; /* Larger size for GIF */
+    height: auto;
+    animation: pulse 1.5s infinite; /* Example animation for GIF */
+}
+
+/* Styles for talk.png */
+.talk-png {
+    width: 20px; /* Smaller size for PNG */
+    height: auto;
+    opacity: 0.8; /* Slightly dimmed PNG */
+}
+
+/* Optional pulse animation for GIF */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+}
+.crt {
+    display: contents;
+}
+
+.crt .circle-button {
+    position: fixed;
+    bottom: 18px; /* Distance from the bottom of the screen */
+    right: 50px; /* Distance from the right side of the screen */
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    border: #22c5b7 1.8px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    z-index: 1002;
+}
+
+.crt .circle-button:hover {
+    transform: scale(1.1);
+}
+
+.message-image {
+    width: 45px; 
+    height: auto;
+}
+
+/* Styles for talk.gif */
+.talk-gif {
+    border-radius: 50%;
+    border: 2px blueviolet solid;
+    width: 60px; /* Larger size for GIF */
+    height: auto;
+    animation: pulse 1.5s infinite; /* Example animation for GIF */
+}
+
+/* Styles for talk.png */
+.talk-png {
+    width: 50px; /* Smaller size for PNG */
+    height: auto;
+    opacity: 0.8; /* Slightly dimmed PNG */
+}
+
+/* Optional pulse animation for GIF */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
