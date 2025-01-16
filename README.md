@@ -1,0 +1,2 @@
+# People
+Community sharing platform
