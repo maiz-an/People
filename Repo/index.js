@@ -33,7 +33,7 @@ const makeCommits = (n) => {
 };
 
 // Call the function correctly
-makeCommits(50);
+makeCommits(30);
 
 
 // const markCommit = (x, y) => {
