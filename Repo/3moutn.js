@@ -9,8 +9,8 @@ const git = simpleGit();
 const makeCommits = (daysLeft) => {
   if (daysLeft === 0) return git.push();
 
-  // Random intensity for the day (high or low)
-  const commitsToday = random.boolean() ? random.int(1, 5) : random.int(5, 20);
+  // Bias toward high commit counts (e.g., 70% chance of high, 30% chance of low)
+  const commitsToday = random.float(0, 1) < 0.7 ? random.int(5, 20) : random.int(1, 5);
 
   // Pick a date in the past 3 months
   const date = moment().subtract(random.int(0, 90), "days").format();
@@ -37,4 +37,4 @@ const makeCommits = (daysLeft) => {
 };
 
 // Start making commits
-makeCommits(50);
+makeCommits(30);
